@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'dev.danilbel'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jsoup:jsoup:1.17.2'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'dev.danilbel.Main'
+        )
+    }
+    from {
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
