@@ -4,6 +4,11 @@ This is a realization of the solution to the [task Hitler Crawler](TASK.md).
 
 > The solution uses multithreading to find the necessary page.
 
+> Approximate lead time: 3 hours
+
+### Requirements
+* Java 17
+
 ## How to build and run
 
 The first step is to clone the repository.
